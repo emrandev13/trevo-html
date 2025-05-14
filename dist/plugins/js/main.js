@@ -61,6 +61,9 @@ Version      : 1.0
 			loop:true,
 			margin:10,
 			nav:true,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			autoplaySpeed: 1000,
 			navText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
 			responsive:{
 				0:{
