@@ -1,0 +1,86 @@
+/* start contact section */
+#contact {
+    background: #F8F8FF;
+}
+.contact_title {
+    margin-bottom: 50px;
+}
+.bg_form {
+    padding: 50px;
+}
+.map_container iframe {
+    width: 100%;
+    height: 630px;
+}
+.form-group.name_group {
+    display: flex;
+    gap: 10px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group input, select {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    background: #fff;
+    backdrop-filter: blur(15px);
+    border: none;
+}
+.form-group input:focus {
+   outline: none;
+   border: 1px solid var(--primary);
+   box-shadow: none;
+   background: #fff;
+   backdrop-filter: blur(15px);
+}
+.form-group select:focus {
+   border: 1px solid var(--primary);
+   box-shadow: none;
+   background: #fff;
+   backdrop-filter: blur(15px);
+}
+.form-group textarea {
+   resize: none;
+   background: #fff;
+   backdrop-filter: blur(15px);
+   border: none;
+}
+.form-group textarea:focus {
+   border: 1px solid var(--primary);
+   box-shadow: none;
+   background: fff;
+   backdrop-filter: blur(15px);
+}
+
+#responseMessage {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+    display: none; /* Initially hidden */
+}
+/* end contact section */
+
+
+.contact_select {
+    margin-bottom: 20px;
+    border: none;
+    padding: 0 10px;
+    outline: none;
+    box-shadow: none;
+    height: 48px;
+    line-height: 48px;
+    background: #fff;
+}
+
+.form-control:focus {
+    border:none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-form span.current {
+    color: #777;
+}

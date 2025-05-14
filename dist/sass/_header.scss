@@ -1,0 +1,170 @@
+// Header styles
+#header_section {
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 40px;
+    width: 100%;
+    background-color: rgb(0 0 0 / 30%);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
+}
+.nav-links a.active {
+	color: $primary-color; /* or your highlight color */
+	font-weight: bold;
+}
+.nav-links {
+    text-align: center;
+
+    li {
+        display: inline;
+        padding: 0 20px;
+    }
+
+    a {
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    
+}
+
+.buttons_area {
+    text-align: end;
+
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 20;
+    span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: $primary-color;
+        border-radius: 2px;
+        transition: all 0.4s ease;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.60);
+    box-shadow: 0px 2.25px 4.5px 0px rgba(0, 0, 0, 0.10), 0px 7.5px 15px 0px rgba(0, 0, 0, 0.10), 0px 11.25px 22.5px 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(7.5px);
+   
+    ul {
+        list-style: none;
+        padding: 15px 0;
+        
+        li {
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+
+            a {
+                color: white;
+                font-size: 16px;
+                display: block;
+                padding: 16px 0;
+                transition: all 0.4s ease-in-out;
+                border-left: 0.75px solid transparent;
+                border-right: 0.75px solid transparent;
+
+
+                &:hover {
+                    border-left: 0.75px solid #3cb371;
+                    border-right: 0.75px solid #3cb371;
+                    background: linear-gradient(90deg, rgba(60, 179, 113, 0.3) 100%, rgba(60, 179, 113, 0.3) 100%);
+                }
+            }
+        }
+    }
+}
+
+
+/* Active hamburger lines */
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Active mobile menu animation */
+
+.mobile-menu.show ul li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add delay for each li */
+
+.mobile-menu.show ul li:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.mobile-menu.show ul li:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.mobile-menu.show ul li:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.mobile-menu.show ul li:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.mobile-menu.show ul li:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .nav-links {
+      display: none;
+    }
+    
+    .buttons_area {
+        display: none !important;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+  }
+  

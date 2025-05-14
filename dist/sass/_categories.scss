@@ -1,0 +1,95 @@
+
+
+    
+.categories_all_content {
+
+    .categories_content {
+        padding: 20px 0;
+
+
+        h5 {
+            font-size: 16px;
+            color: #ffffff;
+            font-style: normal;    
+            padding-bottom: 5px;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        p {
+            color: #fff;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+    
+ #categories_section .owl-carousel .owl-item img {
+    max-height: 40px;
+}
+
+
+.categories_card {
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+
+.categories_card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(2 1 37 / 70%);
+    z-index: -1;
+}
+
+#categories_slider.owl-carousel .owl-nav.disabled {
+    display: block;
+    position: absolute;
+    top: -120px;
+    right: 0;
+}
+
+
+
+.owl-theme .owl-nav [class*=owl-] {
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.owl-nav button {
+    margin-right: 20px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    background: transparent;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    padding: 0 !important;
+    font: inherit;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: $primary-color;
+    color: #ffffff;
+}

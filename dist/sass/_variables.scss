@@ -1,0 +1,18 @@
+// This is the main SCSS file that imports all other SCSS files.
+// It is compiled into a single CSS file for production.
+$white: #fff;
+$black: #000;
+$dark: #191A23;
+$primary-color: #3cb371;
+$secondarytextcolor: #777;
+$secondary-p-color: #909DAC;
+$secondary-bg-color: #111013;
+$primary-font: 'Poppins', sans-serif;
+
+// _variables for responsive
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 991px;
+$breakpoint-xl: 1200px;
+
+

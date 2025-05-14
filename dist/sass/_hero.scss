@@ -1,0 +1,399 @@
+#hero_section {
+    background-image: url(../../img/bg/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    height: 700px;
+    padding: 180px 0 100px;
+
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: -webkit-gradient(linear, left top, right top, color-stop(8.81%, #161920), color-stop(99.92%, rgba(22, 25, 32, 0.06)));
+        background: linear-gradient(90deg, #161920 8.81%, rgba(22, 25, 32, 0.06) 99.92%);
+        z-index: -1;
+    }
+
+
+    .banner_title {
+        margin-bottom: 30px;
+
+        h2 {
+            color: #fff;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            
+
+            .highlight {
+                color: $primary-color;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+
+        p {
+            color: #fff;
+            font-size: 18px;
+            max-width: 80%;
+            margin: 0 auto;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 20px;
+        }
+
+    }
+
+}
+
+form.searchForm {
+    margin-top: 50px;
+}
+.tabs_btn_area {
+    width: 418px;
+    height: 53px;
+    border: 1px solid #DDD;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+
+    .tabs_btn1 {
+        width: 208px;
+        height: 42px;
+        line-height: 42px;
+        background: $primary-color;
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border: none;
+        padding: 0;
+        margin-left: 8px;
+    }
+
+    .tabs_btn {
+        color: $primary-color;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border: none;
+        background: transparent;
+        padding: 0;
+        margin-left: 40px;
+    }
+
+}
+
+
+
+.search_container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 1px 22px 1px rgba(69, 64, 219, 0.04);
+}
+
+.input-group .material-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #878787;
+    background-color: transparent;
+}
+
+
+.search-button {
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+    background: $primary-color;
+}
+
+.search-button:hover {
+    background-color: #4338ca;
+}
+
+
+#hero_section {
+    position: relative;
+}
+
+#hero_section:after {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    background-image: url(../../img/bg/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+// search form
+
+
+.search-form {
+    display: flex;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    gap: 21px;
+
+    .input-group {
+        display: flex;
+        align-items: center;
+        background-color: #f6fafd;
+        padding: 0 15px;
+        border: 1px solid #e0e0e0;
+        flex-wrap: nowrap;
+        height: 48px;
+        line-height: 48px;
+
+        .icon-wrapper {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            margin-right: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        select {
+            flex: 1;
+            border: none;
+            background: transparent;
+            font-size: 16px;
+            padding: 8px;
+            outline: none;
+        }
+
+        .icon {
+            color: $primary-color;
+            font-size: 18px;
+            margin-right: 8px;
+        }
+
+        input,
+        select {
+            border: none;
+            background: transparent;
+            outline: none;
+            font-size: 14px;
+            color: #555;
+        }
+
+        select {
+            cursor: pointer;
+        }
+
+    }
+
+  
+}
+
+
+
+.input-group .icon {
+  margin-right: 10px;
+  color: #555;
+  font-size: 1.2rem;
+}
+
+/* Style for Nice Select */
+.nice-select {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #333;
+  padding-right: 24px; /* Space for the arrow */
+  position: relative;
+}
+
+/* Custom angle icon on right side */
+/* Hide default Nice Select arrow */
+.nice-select:after {
+    display: none !important;
+}
+
+/* Make the select box a flex container */
+.nice-select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+.nice-select .current {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+    padding-right: 10px;
+}
+/* Align text inside the dropdown */
+.nice-select .current {
+    flex: 1;
+    text-align: left;
+    padding-right: 10px;
+}
+/* Custom down arrow */
+.nice-select::before {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+    color: #777;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* When dropdown is open, rotate the arrow */
+.nice-select.open::before {
+    transform: translateY(-50%) rotate(180deg);
+    color: var(--primary);
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    background: #fff6ee;
+    border: 2px solid #ffa84c;
+    border-radius: 999px;
+    padding: 20px 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+.label-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+  }
+.search-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    min-width: 140px;
+    flex: 1;
+}
+
+.search-item i {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.search-item label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+
+
+.search-item select,
+.search-item input {
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+    outline: none;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.search-item input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+.nice-select .list {
+    margin-top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 20px;
+    }
+
+    .search-item,
+    .search-button {
+        width: 100%;
+    }
+
+    .search-button {
+        align-self: flex-end;
+    }
+}
+
+/* End hero area */
+
+ #datepicker {
+    position: relative;
+    display: inline-block;
+}
+/* Hide calendar icon in Chrome */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+.date-input {
+    padding: 10px 10px 10px 35px; /* extra left padding for icon */
+    font-size: 16px;
+}
+
+.date_icon {
+    position: absolute;
+    left: 10px; /* moved to the left */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3cb371;
+    cursor: pointer;
+
+}

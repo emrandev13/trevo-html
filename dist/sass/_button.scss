@@ -1,0 +1,191 @@
+.signup_btn {
+    border-radius: 30px;
+    background: #3cb371;
+    width: 165px;
+    height: 48px;
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
+    margin-left: 20px;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.mobile_signup_btn {
+    border-radius: 10px;
+    background: #3cb371;
+    width: 169px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 0;
+    border: none;
+}
+
+.login_btn {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        color: #3cb371;
+    }
+}
+
+
+
+.main_btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 190px;
+    height: 52px;
+    background: #3cb371;
+    display: inline-block;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 52px;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.main_btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000; /* Modern gradient */
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.main_btn:hover::before {
+    transform: translateX(0);
+}
+
+.main_btn:hover {
+    color: #fff;
+}
+
+
+.apply_btn {
+    width: 116px;
+    height: 35px;
+    border-radius: 8px;
+    background: #3cb371;
+    border: none;
+    padding: 0;
+    line-height: 35px;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.cv_btns {
+    width: 187.281px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    background: #3cb371;
+
+    svg {
+        margin-right: 8px;
+    }
+}
+
+.accordion_btn {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid #DDD;
+    background: #3cb371;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.cta_btn {
+    border-radius: 5px;
+    background: #3cb371;
+    width: 119px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    padding: 0;
+}
+.apply_btn {
+    background-color: $primary-color;
+    color: white;
+    padding: 0;
+    border: none;
+    width: 180px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 48px;
+    line-height: 48px;
+
+}
+.search_btn {
+    width: 301px;
+    height: 48px;
+    line-height: 48px;
+    background: #3cb371;
+    padding: 0;
+    font-size: 20px;
+    border: none;
+    z-index: 0;
+}
+
+.news_btn {
+    border: none;
+    width: 140px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 30px;
+    font-size: 14px;
+
+    svg {
+        margin-left: 6px;
+    }
+}
+
+.form_btn {
+    width: 250px;
+    height: 48px;
+    margin-top: 30px;
+    line-height: 48px;
+    border: none;
+    font-size: 16px;
+}
+.apply_btn {
+    margin-top: 15px;
+}
+
+.tour_btn {
+    width: 230px;
+    border-radius: 10px;
+}

@@ -1,0 +1,101 @@
+.tour_title {
+    color: #192B4C;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.tour_card {
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: var(--1, linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(60, 179, 113, 0.70) 46.3%, #3CB371 93.72%));
+        z-index: 0;
+        opacity: 0;
+        transition: all 0.4s;
+    }
+
+    &:hover::after {
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+
+
+.tour_img {
+    position: relative;
+
+
+    img {
+        width: 100%;
+    }
+
+    .tour_price {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+
+        span {
+            background: $primary-color;
+            padding: 5px 20px;
+            display: inline-block;
+            font-size: 15px;
+            color: $white;
+        }
+
+    }
+
+    .company_tour_info {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: 1;
+
+        span {
+            float: left;
+            color: $white;
+            font-size: 16px;
+        }
+
+        h4 {
+            color: $white;
+            font-size: 30px;
+        }
+
+        p {
+            color: #fff;
+            font-size: 16px;
+
+            i {
+                margin-right: 6px;
+            }
+        }
+    }
+
+
+}
+
+.tour_btn_area {
+    margin-top: 30px;
+}

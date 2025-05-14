@@ -1,0 +1,120 @@
+
+.accordion_all_content {
+  padding: 50px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 1px 8px 20px 5px rgba(0, 0, 0, 0.07);
+}
+
+// Accordion Title
+.accordion_title {
+  color: $black;
+  font-family: $primary-font;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+
+
+/* Accordion styles */
+.accordion-header {
+    background: #FFF;
+}
+.accordion-body {
+    background: #fafafa;
+    color: var(--p);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 15px 20px;
+}
+.accordion-item {
+    border-radius: 12px;
+    background: #fafafa;
+    margin-bottom: 10px;
+    border: none;
+}
+.accordion-button {
+    font-weight: bold;
+    color: var(--primary-t-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: #fafafa;
+}
+.accordion-button:focus {
+    z-index: 3;
+    outline: none;
+    box-shadow: none;
+    background: #fafafa;
+}
+.accordion-button::after {
+    display: none !important;
+}
+.toggle-icon {
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+.service_list {
+	margin-left: 15px;
+ 
+    li {
+        color: #94a3b8;
+        margin-bottom: 10px;
+        list-style: inherit;
+    }
+}
+  
+.accordion-header span {
+    color: #1D3055;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.accordion-body p {
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+.accordion {
+    border: none;
+}
+.faq_btn_area {
+    text-align: center;
+    margin-top: 50px;
+}
+.faq_btn_area {
+    text-align: center;
+    margin-top: 50px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.btn_collapes:hover,
+.btn_collapes:focus,
+.accordion-button[aria-expanded="true"] {
+    background: $primary-color !important; /* Add !important to override Bootstrap */
+}
+
+.accordion-header:hover span,
+.accordion-header:focus span,
+.accordion-button[aria-expanded="true"] span {
+    color: #fafafa !important;  
+    transition: color 0.3s ease-in-out;
+}
+.accordion-button:hover {
+    background: $primary-color !important;
+}
+/* end faq section */
+
+
+
+

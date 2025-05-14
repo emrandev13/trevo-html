@@ -1,0 +1,86 @@
+
+// Responsive styles for the website
+// This file contains media queries for different screen sizes
+// and applies specific styles to elements based on the screen size.
+@include respond-to(xl) {
+
+
+
+}
+
+
+
+@include respond-to(lg) {
+	.banner_title h2 {
+        font-size: 36px !important;
+    }
+
+    .banner_title p {
+        font-size: 18px !important;
+    }
+
+    .work_icons {
+        margin-bottom: 30px !important;
+    }
+
+    .cv_right_content {
+        margin-top: 50px !important;
+    }
+
+    .cv_right_content {
+        margin-bottom: 50px !important;
+    }
+
+    .newslatter_left {
+        margin-bottom: 50px !important;
+    }
+    .news_card {
+        margin-bottom: 30px !important;
+    }
+    .footer_right, .footer_middle {
+        float: left !important;
+    }
+
+    .footer_left {
+        margin-bottom: 50px !important;
+    }
+
+    .footer_middle {
+        margin-bottom: 50px !important;
+    }
+
+    
+}
+  
+
+
+@include respond-to(md){
+	.hero_right_img {
+        margin-top: 50px !important;
+    }
+
+    .search-form {
+        flex-direction: column !important;
+    }
+
+    #categories_slider.owl-carousel .owl-nav.disabled {
+        display: none !important;
+    }
+
+     #categories_slider.owl-carousel .owl-dots.disabled {
+        display: block !important;
+    }
+
+    .owl-carousel .owl-carousel .owl-nav.disabled {
+        display: none !important;
+    }
+}
+
+
+
+@include respond-to(sm){
+	
+
+}
+
+
